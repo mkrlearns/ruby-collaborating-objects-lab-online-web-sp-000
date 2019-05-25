@@ -5,9 +5,8 @@ class MP3Importer
     @path = path
   end
 
-# .glob("somedirectory/*.php")
   def files
-    Dir.entries(@path).select{|file| file.match(/mp3/)}
+    Dir.entries(@path).select{ |file| file.match(/mp3/) }
   end
 
   def import
