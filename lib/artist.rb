@@ -5,6 +5,4 @@ class Artist
     @name = name
   end
  
-  # other methods
- 
 end
