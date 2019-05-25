@@ -6,13 +6,11 @@ class MP3Importer
   end
 
   def files
-    @files=Dir.new(@path).grep(/.*\.mp3/)
+    @files = Dir.new(@path).grep(/.*\.mp3/)
   end
 
   def import
-    self.files.each { |file|
-      Song.new_by_filename(file)
-    end
+    self.files.each { |file| Song.new_by_filename(file) }
   end
 
 end
