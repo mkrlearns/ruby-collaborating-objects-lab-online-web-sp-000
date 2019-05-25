@@ -31,6 +31,10 @@ class Artist
     @@all
   end
   
+  def self.find_or_create_by_name(name)
+    self.all.find{ |artist| artist.name == name} || self.new(name).save
+  end
+  
   def print_songs
     self.songs.each { |song| puts song.name }
   end
