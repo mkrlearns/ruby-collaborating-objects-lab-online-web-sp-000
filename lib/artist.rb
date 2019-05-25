@@ -23,7 +23,7 @@ class Artist
   end
   
   def print_songs
-    print Song.all.count
+    puts Song.all.count
   end
 
 end
