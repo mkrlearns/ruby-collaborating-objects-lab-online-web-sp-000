@@ -22,8 +22,8 @@ class Artist
     @songs
   end
   
-  def self.print_songs
-    puts @songs
+  def print_songs
+    self.songs.each { |song| puts song.name }
   end
 
 end
