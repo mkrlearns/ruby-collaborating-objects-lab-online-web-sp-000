@@ -22,7 +22,7 @@ class Artist
     @songs
   end
   
-  def print_songs
+  def self.print_songs
     puts @songs
   end
 
